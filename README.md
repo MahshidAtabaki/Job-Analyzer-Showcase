@@ -7,9 +7,7 @@ same three questions: *can they sponsor my visa, do I really fit, and is the com
 Answering them by hand takes 20 to 30 minutes per job. Job Analyzer answers them in about three
 minutes, then helps you apply.
 
-[![Watch the demo](demo-thumbnail.jpg)](job-analyzer-demo.mp4)
-
-▶ **[Watch the 90 second demo](job-analyzer-demo.mp4)**
+https://github.com/user-attachments/assets/c5b1b958-797c-4e6f-a215-0819fd5f4a3a
 
 > This repository is a showcase only: the overview and the demo video. The source code is private.
 
