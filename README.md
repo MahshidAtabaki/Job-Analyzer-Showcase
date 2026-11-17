@@ -83,6 +83,20 @@ sponsor visas, a quarter are dropped after the company step and a quarter go on 
 average job costs about 11k tokens instead of about 55k: **roughly 80% less per job analysis**, and the
 user only reads what helps the next decision.
 
+**The right model for each step.** I also looked at what each step really needs from the model, and
+stopped using the same model for everything:
+
+| Step | Model | Why |
+|---|---|---|
+| 1. Sponsor register | none | A lookup in code. |
+| 2. Company research | Haiku (small, fast) | Searching and summarising public facts. A bigger model adds cost, not accuracy. |
+| 3. Fit with my CV | Sonnet | Judging gaps honestly, without stretching experience, needs careful reasoning. |
+| 4. Cover letter, CV, interview prep | Sonnet | Writing quality and tone matter here. |
+
+Haiku uses a fraction of what Sonnet does per token, so the company step, which runs on far more jobs
+than the later steps, now costs a fraction of what it did, on top of the savings above. The bigger model
+is kept for the steps where its judgement changes the result.
+
 ## Your profile
 
 Upload your CV (PDF or Word) and the CV text is rebuilt automatically. Add your LinkedIn and portfolio,
